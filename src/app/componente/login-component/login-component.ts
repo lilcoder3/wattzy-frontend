@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
           icon: 'success',
           title: 'Login exitoso',
           text: 'Bienvenido al sistema',
-          confirmButtonColor: '#57614F', // Puedes usar tus colores personalizados
+          confirmButtonColor: '#000000', // Puedes usar tus colores personalizados
         }).then(() => {
           this.router.navigate(['home']);
         });
@@ -68,7 +68,7 @@ export class LoginComponent implements OnInit {
           icon: 'error',
           title: 'Error de autenticación',
           text: this.mensaje,
-          confirmButtonColor: '#B3B792', // Puedes usar tus colores personalizados
+          confirmButtonColor: '#000000', // Puedes usar tus colores personalizados
         });
       }
     );
