@@ -1,0 +1,48 @@
+:root{
+  --bg:#F8ECF8; --card:#fff; --border:#E7E3EE; --input:#F7F7FB;
+  --text:#111827; --muted:#6B7280; --primary:#222; --primary-hover:#2f2f2f;
+  --focus-ring:rgba(99,102,241,.18); --radius:12px; --shadow:0 12px 30px rgba(17,24,39,.12);
+}
+
+*{box-sizing:border-box}
+
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+
+.login-section{
+  min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px;
+}
+
+.wrapper{
+  width:100%; max-width:400px; background:var(--card);
+  border:1px solid var(--border); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:30px 28px;
+}
+
+.title{font-size:72px; font-weight:405; text-align:center; margin-bottom:64px; letter-spacing: -2px;}
+
+.field{ margin-bottom:18px }
+.field label{
+  display:block; margin:0 0 6px; font-size:14px; color:var(--text);
+}
+
+.field > input{
+  width:100%; height:44px; border-radius:10px; border:1px solid var(--border);
+  background:var(--input); padding:0 14px; font-size:15px; outline:none;
+  transition:box-shadow .2s,border-color .2s,background .2s;
+}
+
+.field > input::placeholder{ color:#9CA3AF }
+.field > input:focus{
+  border-color:#CFCBE4; background:#fff; box-shadow:0 0 0 4px var(--focus-ring);
+}
+
+.field input[type="submit"]{
+  background-color: #000000; font-weight:420; border:1px solid #000000;
+  cursor:pointer; transition:background .15s, transform .02s; color:#fff;
+}
+.field input[type="submit"]:hover{ background:var(--primary-hover) }
+.field input[type="submit"]:active{ transform:translateY(1px) }
+
+.signup-link{ margin-top:12px; text-align:center; font-size:14px; color:var(--muted) }
+.signup-link a{ color:#1F5FD6; text-decoration:none; font-weight:500 }
+.signup-link a:hover{ text-decoration:underline }
